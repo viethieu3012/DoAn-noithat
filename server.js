@@ -63,6 +63,6 @@ var accountRouter = require('./Routers/account')
 app.use('/api/account/',accountRouter);
 
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log('Server started on port');
 });
