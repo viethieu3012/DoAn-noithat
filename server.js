@@ -13,6 +13,15 @@ app.use(bodyParser.json())
 app.get('/',(req,res,next)=>{
     res.sendFile(__dirname + '/index.html');
 })
+app.get('/login',(req,res,next)=>{
+    res.sendFile(__dirname + '/form_DN.html');
+})
+app.get('/sigin',(req,res,next)=>{
+    res.sendFile(__dirname + '/form_DK.html');
+})
+app.get('/infomation',(req,res,next)=>{
+    res.sendFile(__dirname + '/TTCN.html');
+})
 
 app.post('/register',(req,res,next)=>{
     var username = req.body.username
@@ -64,5 +73,5 @@ app.use('/api/account/',accountRouter);
 
 
 app.listen(process.env.PORT, () => {
-    console.log('Server started on port');
+    
 });
