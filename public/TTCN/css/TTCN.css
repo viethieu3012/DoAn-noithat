@@ -1,0 +1,166 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+html {
+    color: #333;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100%;
+} 
+#main{
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 65px 0 65px;
+
+}
+.content-column{
+    display: flex;
+    justify-content: space-between;
+}
+.row-left{
+    width: 260px;
+    line-height: 30px;
+    font-size: 18px;
+    padding: 0 0 0 20px;
+    background-color: #f6f7f8;
+    color:#4B4E51;
+    font-weight: 600;
+
+}
+.page-account{
+    padding: 40px 0 0 0;
+    min-width: 1400px;
+}
+.account-user{
+    padding-left: 0;
+    margin: 0;
+    text-align: left;
+    display: block;
+    width: 100%;
+    float: left;
+    border-left: 4px solid #FBAF1A;
+    margin-left: -19px;
+    margin-top: 15px;
+}
+.account-user .user-name{
+    margin: 0 0 0 5px;
+}
+#my-account-nav{
+    margin: 10px 0 0 0  ;
+    font-size: 16px;
+}
+.content-column-2{
+    display: flex;
+    justify-content: space-between;
+}
+.content-column-2-left{
+    width: 66%;
+}
+.content-column-2-left input{
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 0 0.75em;
+    height: 45px;
+    font-size: .97em;
+    border-radius: 0;
+    max-width: 100%;
+    width: 100%;
+    vertical-align: middle;
+    background-color: #fff;
+    color: #333;
+    margin: 5px 0 5px 0;
+}
+
+.row-right{
+    width: 100%;
+    padding: 0 15px 0 30px;
+}
+/* .clear::after{
+    content: "";
+    display: table;
+    clear: both;
+} */
+.woocommerce-Button{
+    background-color: #0A0A0B;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 0 0 20px 20px;
+    height: 40px;
+    cursor: pointer;
+}
+.form-group{
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+}
+/* .form-group span{
+    margin-top: 5px ;
+} */
+.clear{
+    display: flex;
+    justify-content: space-between;
+}
+.clear .form-group{
+    width: 46%;
+}
+
+fieldset{
+    margin: 15px 0 30px 0;
+}
+fieldset legend{
+    font-size: 22px;
+    font-weight: 600;
+}
+.address{
+    font-size: 18px;
+    font-weight: 600;
+}
+.form_option_billing{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 8px 10px;
+    font-size: 18px;
+    border: 1px solid #dfdfe2;
+    font-weight: 400;
+    min-height: 40px;
+    line-height:15px;
+    min-width: 40px;
+    margin: 0 0 20px 0;
+}
+.form-address{
+ 
+}
+/* .form-selector label{
+    display: block;
+} */
+.form-selector select{
+    display: block;
+    margin: 20px 0 0 0;
+    width: 100%;
+    min-height: 45px;
+    border: 1px solid #ddd;
+}
+.button-update{
+    margin: 20px 5px 50px 15px;
+}
+.content-column-2-right{
+    min-width: 33%;
+    padding: 0 0 0 20px;
+
+}
+.content-column-2-right h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+.content-right-top{
+    
+}

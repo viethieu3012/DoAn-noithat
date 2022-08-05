@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang thông tin cá nhân</title>
+    <link rel="icon" href=".//public/public/assets/img/logo2.png" type="image/x-icon"/>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./public/assets/css/grid.css">
+    <link rel="stylesheet" href="./public/assets/css/main.css">
+    <link rel="stylesheet" href="./public/assets/css/base.css">
+    <link rel="stylesheet" href="./public/TTCN/css/TTCN.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500&family=Josefin+Sans:wght@100;200;300;400;500&family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header grid wide">
+            <div class="header__nav row">
+                <div class="header__nav-right l-4 m-0 c-0">
+                    <ul class="header__right-list">
+                        <li class="header__right-item">
+                            <a class="header__right-item-link" href="#"><i class="fa-solid fa-location-dot"></i>
+                               address
+                            </a>
+                        </li>
+                        <li class="header__right-item">
+                            <a class="header__right-item-link" href="#"><i class="fa-solid fa-heart"></i>
+                                Wishlist</a>
+                        </li>
+                        <li class="header__right-item">
+                            <a class="header__right-item-link" href="form_DN.html">
+                                <i class="fa-solid fa-unlock"></i>
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="strikethrough"></div>
+            <div class="header__search row">
+                <div class="header__search-logo col l-3 m-9 c-9">
+                    <a href="./index.html" class="header__search-logo-link">
+                        <img src="./public/assets/img/header/logo/logo.png" alt="" class="header__search-logo-img">
+                    </a>
+                </div>
+                <div class="header__search-search col l-6 m-0 c-0">
+                    <form class="header__search-search-form" action="">
+                        <input class="header__search-search-input" type="text" placeholder="Tìm kiếm" id="search">
+                        <label class="header__search-search-icon" for="search">
+                            <a class="header__search-search-icon-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </label>
+                    </form>
+                </div>
+                <div class="header__search-tell col l-2 m-0 c-0">
+                    <a class="header__search-tell-link" href="tel:(+84)99998943">
+                        <img src="./public/assets/img/header/contact/phone.png" alt="" class="header__search-tell-img">
+                        <div class="header__search-tell-text">
+                            <h1>Gọi miễn phí</h1>
+                            <span>(+84)123.456.7890</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="header__search-cart col l-1 m-3 c-3">
+                    <a class="header__search-cart-link" href="#">
+                        <img src="./public/assets/img/header/contact/cart.png" alt="" class="header__search-cart-img">   
+                        <div class="header__search-cart-text">
+                            <h1>Giỏ hàng</h1>
+                            <span>0 item(s)</span>
+                        </div>
+                    </a>
+                    <div class="header__search-cart-list">
+                        <h1>Giỏ hàng của bạn</h1>
+                        <span>Giỏ hàng của bạn có 0 items</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header__search-mobile grid wide l-0">
+            <div class="header__search-mobile-container">
+                <a class="header__search-search-icon-link header__search-search-icon-link-mobile" href="#">
+                    <i class="header__search-search-icon-mobile fa-solid fa-magnifying-glass"></i>
+                    <form  class="header__search-search-form header__search-search-form-moible" action="">
+                        <input class="header__search-search-input" type="text" placeholder="Search for product" id="search">
+                        <label class="header__search-search-icon" for="search">
+                            <a class="header__search-search-icon-link" href="#"></a>
+                        </label>
+                    </form>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    <main id="main" class="">
+        <div class="my-account-header page-title normal-title">
+            <div class="page-title-inner flex-row containertext-left">
+                <div class="flex-col flex-grow medium-text-center">
+                        <!-- <h1 class="uppercase mb-0">My Account</h1> -->
+                </div>
+            </div>
+        </div>
+        <div class="page-account ">
+        <div class="container" role="main">
+        <div class="content-column">
+            <div class="row-left">
+                <div class="account-user">
+            <span class="image mr-half inline-block"></span>
+            <span class="user-name inline-block">Tài khoản cá nhân</span>
+            </div>
+                <ul id="my-account-nav" class="account-nav nav nav-line nav-uppercase nav-vertical mt-half">
+                     
+              <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-account is-active active">
+                  <a href="https://nhaxinh.com/tai-khoan/edit-account/">Thông tin của tôi</a>
+                </li>
+              <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--orders">
+                  <a href="https://nhaxinh.com/tai-khoan/orders/">Đơn hàng</a>
+                </li>
+              <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--recently-viewed-products">
+                  <a href="https://nhaxinh.com/tai-khoan/recently-viewed-products/">Sản phẩm vừa xem</a>
+                </li>
+                    <li class="wishlist-account-element ">
+                    <a href="https://nhaxinh.com/tai-khoan/wishlist/?wishlist-action">Wishlist</a>
+                </li>
+                  <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--customer-logout">
+            <a href="https://nhaxinh.com/tai-khoan/customer-logout/">Đăng xuất</a>
+          </li>
+                </ul>
+            </div>
+        
+            <div class="row-right">
+                <div class="woocommerce">
+                <div class="woocommerce-MyAccount-content">
+                    <div class="woocommerce-notices-wrapper"></div>
+                    <div class="content-column-2">
+                    <div class="content-column-2-left">
+                        <form class="form" action="" method="post"  >
+
+                            <div class="clear">
+                                <p class="form-group">
+                                    <label for="name" class="form-label">Tên <span class="required">*</span></label>
+                                    <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_first_name" id="account_first_name" autocomplete="given-name" value="" />
+                                </p>
+                                <p class="form-group">
+                                    <label for="surname" class="form-label">Họ <span class="required">*</span></label>
+                                    <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_last_name" id="account_last_name" autocomplete="family-name" value="" />
+                                </p>
+                            </div>
+                
+                            <p class="form-group">
+                                <label for="account_display_name">Tên hiển thị&nbsp;<span class="required">*</span></label>
+                                <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_display_name" id="account_display_name" value="viethieu3012" /> <span><em>Tên này sẽ được hiển thị ở phần tài khoản và bình luận</em></span>
+                            </p>
+                            <div class="clear"></div>
+                
+                            <p class="form-group">
+                                <label for="account_email">Địa chỉ email&nbsp;<span class="required">*</span></label>
+                                <input type="email" class="woocommerce-Input woocommerce-Input--email input-text" name="account_email" id="account_email" autocomplete="email" value="viethieu3012@gmail.com" />
+                            </p>
+                
+                            <fieldset>
+                                <legend>THAY ĐỔI MẬT KHẨU</legend>
+                
+                                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                                    <label for="password_current">Mật khẩu hiện tại (để trống nếu không có thay đổi)</label>
+                                    <input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_current" id="password_current" autocomplete="off" />
+                                </p>
+                                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                                    <label for="password_1">Mật khẩu mới (để trống nếu không có thay đổi)</label>
+                                    <input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_1" id="password_1" autocomplete="off" />
+                                </p>
+                                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                                    <label for="password_2">Xác nhận mật khẩu mới</label>
+                                    <input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_2" id="password_2" autocomplete="off" />
+                                </p>
+                            </fieldset>
+                            <div class="clear"></div>
+                            <p>
+                                <input type="hidden" id="save-account-details-nonce" name="save-account-details-nonce" value="b49a6538fb" />
+                                <input type="hidden" name="_wp_http_referer" value="/tai-khoan/edit-account/" />				
+                                <button type="submit" class="woocommerce-Button button" name="save_account_details" value="Lưu thay đổi">LƯU THAY ĐỔI</button>
+                                <input type="hidden" name="action" value="save_account_details" />
+                            </p>
+                
+                        </form>
+                
+                            
+                            <h3 class="address">Địa chỉ</h3>
+                        <div class="ocwma_table_bill"></div>    
+                            <div class="cus_menu">
+                                <div class="billling-button">
+                                <button class="form_option_billing" data-id="335" style="background-color: #000000; color: #ffffff; padding: 8px 10px; font-size: 15px;">+</button>
+                                </div>
+                            </div>
+                    
+                    <form method="post" class="form-address">
+                
+                        <div class="woocommerce-address-fields">
+                            
+                            <div class="woocommerce-address-fields__field-wrapper">
+                                <p class="form-row form-row-wide validate-required" id="billing_first_name_field" data-priority="">
+                                    <label for="billing_first_name" class="">Họ và tên <span class="required">*</span></label>
+                                    <span class="woocommerce-input-wrapper">
+                                        <input type="text" class="input-text " name="billing_first_name" id="billing_first_name" placeholder="Nhập họ và tên"  value=""  />
+                                    </span>
+                                </p>
+                                <p class="form-row form-row-wide validate-required" id="billing_address_1_field" data-priority="44">
+                                    <label for="billing_address_1" class="">Địa chỉ&nbsp;<span class="required">*</span></label>
+                                    <span class="woocommerce-input-wrapper">
+                                        <input type="text" class="input-text " name="billing_address_1" id="billing_address_1" placeholder="Nhập địa chỉ"  value="" autocomplete="address-line1" />
+                                    </span>
+                                </p>
+                                <input type="hidden" name="billing_country" value="VN" />
+                                    <p class="form-selector" id="billing_state_field" data-priority="41">
+                                        <label for="billing_state" class="">Tỉnh / Thành phố&nbsp;<span class="required">*</span></label>
+                                        <span class="woocommerce-input-wrapper">
+                                            <select name="billing_state" id="billing_state" class="state_select " autocomplete="address-level1" data-placeholder="Vui lòng chọn..."  data-input-classes="" data-label="Tỉnh / Thành phố">
+                                                <option value="">Vui lòng chọn...</option>
+                                                <option value="HANOI" >Hà Nội</option>
+                                                <option value="HOCHIMINH" >Tp. Hồ Chí Minh</option>
+                                                <option value="ANGIANG" >An Giang</option>
+                                                <option value="BACGIANG" >Bắc Giang</option>
+                                                <option value="BACKAN" >Bắc Kạn</option>
+                                                <option value="BACLIEU" >Bạc Liêu</option>
+                                                <option value="BACNINH" >Bắc Ninh</option>
+                                                <option value="BARIAVUNGTAU" >Bà Rịa - Vũng Tàu</option>
+                                                <option value="BENTRE" >Bến Tre</option>
+                                                <option value="BINHDINH" >Bình Định</option>
+                                                <option value="BINHDUONG" >Bình Dương</option>
+                                                <option value="BINHPHUOC" >Bình Phước</option>
+                                                <option value="BINHTHUAN" >Bình Thuận</option>
+                                                <option value="CAMAU" >Cà Mau</option>
+                                                <option value="CANTHO" >Cần Thơ</option>
+                                                <option value="CAOBANG" >Cao Bằng</option>
+                                                <option value="DAKLAK" >Đắk Lắk</option>
+                                                <option value="DAKNONG" >Đắk Nông</option>
+                                                <option value="DANANG" >Đà Nẵng</option>
+                                                <option value="DIENBIEN" >Điện Biên</option>
+                                                <option value="DONGNAI" >Đồng Nai</option>
+                                                <option value="DONGTHAP" >Đồng Tháp</option>
+                                                <option value="GIALAI" >Gia Lai</option>
+                                                <option value="HAGIANG" >Hà Giang</option>
+                                                <option value="HAIDUONG" >Hải Dương</option>
+                                                <option value="HAIPHONG" >Hải Phòng</option>
+                                                <option value="HANAM" >Hà Nam</option>
+                                                <option value="HATINH" >Hà Tĩnh</option>
+                                                <option value="HAUGIANG" >Hậu Giang</option>
+                                                <option value="HOABINH" >Hòa Bình</option>
+                                                <option value="HUNGYEN" >Hưng Yên</option>
+                                                <option value="KHANHHOA" >Khánh Hòa</option>
+                                                <option value="KIENGIANG" >Kiên Giang</option>
+                                                <option value="KONTUM" >Kon Tum</option>
+                                                <option value="LAICHAU" >Lai Châu</option>
+                                                <option value="LAMDONG" >Lâm Đồng</option>
+                                                <option value="LANGSON" >Lạng Sơn</option>
+                                                <option value="LAOCAI" >Lào Cai</option>
+                                                <option value="LONGAN" >Long An</option>
+                                                <option value="NAMDINH" >Nam Định</option>
+                                                <option value="NGHEAN" >Nghệ An</option>
+                                                <option value="NINHBINH" >Ninh Bình</option>
+                                                <option value="NINHTHUAN" >Ninh Thuận</option>
+                                                <option value="PHUTHO" >Phú Thọ</option>
+                                                <option value="PHUYEN" >Phú Yên</option>
+                                                <option value="QUANGBINH" >Quảng Bình</option>
+                                                <option value="QUANGNAM" >Quảng Nam</option>
+                                                <option value="QUANGNGAI" >Quảng Ngãi</option>
+                                                <option value="QUANGNINH" >Quảng Ninh</option>
+                                                <option value="QUANGTRI" >Quảng Trị</option>
+                                                <option value="SOCTRANG" >Sóc Trăng</option>
+                                                <option value="SONLA" >Sơn La</option>
+                                                <option value="TAYNINH" >Tây Ninh</option>
+                                                <option value="THAIBINH" >Thái Bình</option>
+                                                <option value="THAINGUYEN" >Thái Nguyên</option>
+                                                <option value="THANHHOA" >Thanh Hóa</option>
+                                                <option value="THUATHIENHUE" >Thừa Thiên Huế</option>
+                                                <option value="TIENGIANG" >Tiền Giang</option>
+                                                <option value="TRAVINH" >Trà Vinh</option>
+                                                <option value="TUYENQUANG" >Tuyên Quang</option>
+                                                <option value="VINHLONG" >Vĩnh Long</option>
+                                                <option value="VINHPHUC" >Vĩnh Phúc</option>
+                                                <option value="YENBAI" >Yên Bái</option>
+                                            </select>
+                                        </span>
+                                    </p>
+                                <p class="form-selector" id="billing_city_field" data-priority="">
+                                    <label for="billing_city" class="">Quận / Huyện <span class="required">*</span></label>
+                                    <select name="billing_city" id="billing_city" class="select " data-allow_clear="true" data-placeholder="Chọn quận / huyện">
+                                    <option value=""  selected='selected'>Chọn quận / huyện</option>
+                                    </select>
+                                </p>						
+                                    <p class="form-row form-row-wide validate-required validate-phone" id="billing_phone_field" data-priority="100">
+                                        <label for="billing_phone" class="">Số điện thoại&nbsp;<span class="required">*</span></label>
+                                        <span class="woocommerce-input-wrapper"><input type="tel" class="input-text " name="billing_phone" id="billing_phone" placeholder=""  value="" autocomplete="tel" /></span>
+                                    </p>
+                                    <p class="form-row form-row-wide validate-required validate-email" id="billing_email_field" data-priority="110">
+                                        <label for="billing_email" class="">Địa chỉ email&nbsp;<span class="required">*</span></label>
+                                        <span class="woocommerce-input-wrapper"><input type="email" class="input-text " name="billing_email" id="billing_email" placeholder=""  value="viethieu3012@gmail.com" autocomplete="email username" /></span>
+                                    </p>			
+                                </div>
+                
+                                    <div class="ocwma_footer_fields" style="display:none;">
+                                        <input type="hidden" id="billing_ocwma_option_id" name="billing_ocwma_option_id" value="" />
+                                        <input type="hidden" id="billing_ocwma_reference_field" name="billing_ocwma_reference_field" value="" />
+                                        <p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first" id="billing_is_default_address_field">
+                                            <input type="checkbox" id="billing_is_default_address" name="billing_is_default_address" value="1">
+                                            <label for="billing_is_default_address"> Đặt làm địa chỉ mặc định</label>
+                                        </p>
+                                        <p class="woocommerce-form-row woocommerce-form-row--last form-row form-row-last" id="billing_delete_ocwma_option_field">
+                                            <a id="billing_delete_ocwma_option" class="btn_ocwma_option btn_delete_ocwma_option"> 
+                                                <i class="fal fa-trash-alt"></i> Xoá địa chỉ                </a>
+                                        </p>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <p>
+                                        <button type="submit" class="woocommerce-Button button-update" name="save_address" value="Cập nhật">CẬP NHẬT</button>
+                                        <input type="hidden" id="woocommerce-edit-address-nonce" name="woocommerce-edit-address-nonce" value="da3709fa6b" />
+                                        <input type="hidden" name="_wp_http_referer" value="/tai-khoan/edit-account/" />				
+                                        <input type="hidden" name="action" value="edit_address" />
+                                    </p>
+                        </div>
+                
+                    </form>
+        
+                    </div>
+                    <div class="content-column-2-right content-right-top">
+                        <div class="sidebar-box">
+                            <div class="sidebar-box-header">
+                                <a href="https://nhaxinh.com/tai-khoan/wishlist/?wishlist-action">
+                                <h4>Danh sách yêu thích <span>0</span></h4>
+                                </a>
+                            </div>
+                            <div class="sidebar-box-content row">
+                            </div>
+                        </div>
+                
+                <!-- <div class="sidebar-box">
+                    <div class="sidebar-box-header">
+                        <a href="https://nhaxinh.com/tai-khoan/recently-viewed-products/">
+                            <h4>Sản phẩm vừa xem <span>10</span></h4>
+                        </a>
+                    </div>
+                    <div class="sidebar-box-content row">
+                                    
+                                <div class="box-content-item large-4 col">
+                                    <a href="https://nhaxinh.com/san-pham/ghe-rumba/" title="Ghế Rumba">
+                                        <div data-thumb="https://nhaxinh.com/wp-content/uploads/2021/10/ghe-rumba-nau-1_3_76786_1-100x100.jpg" class="woocommerce-product-gallery__image slide first"><img width="600" height="360" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201000%20600%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" class="lazy-load wp-post-image skip-lazy" alt="" title="ghe-rumba-nau-1_3_76786_1.jpg" data-caption="" data-src="https://nhaxinh.com/wp-content/uploads/2021/10/ghe-rumba-nau-1_3_76786_1.jpg" data-large_image="https://nhaxinh.com/wp-content/uploads/2021/10/ghe-rumba-nau-1_3_76786_1.jpg" data-large_image_width="1000" data-large_image_height="600" srcset="" data-srcset="https://nhaxinh.com/wp-content/uploads/2021/10/ghe-rumba-nau-1_3_76786_1-600x360.jpg 600w, https://nhaxinh.com/wp-content/uploads/2021/10/ghe-rumba-nau-1_3_76786_1-300x180.jpg 300w, https://nhaxinh.com/wp-content/uploads/2021/10/ghe-rumba-nau-1_3_76786_1-667x400.jpg 667w, https://nhaxinh.com/wp-content/uploads/2021/10/ghe-rumba-nau-1_3_76786_1-768x461.jpg 768w, https://nhaxinh.com/wp-content/uploads/2021/10/ghe-rumba-nau-1_3_76786_1.jpg 1000w" sizes="(max-width: 600px) 100vw, 600px" /></div>                    </a>
+                                </div>
+                                                
+                                <div class="box-content-item large-4 col">
+                                    <a href="https://nhaxinh.com/san-pham/ghe-bui-2/" title="Ghế Bụi">
+                                        <div data-thumb="https://nhaxinh.com/wp-content/uploads/2021/10/ghe_an_bui_1-100x100.jpg" class="woocommerce-product-gallery__image slide first"><img width="600" height="400" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201000%20666%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" class="lazy-load wp-post-image skip-lazy" alt="ghế ăn Bụi" title="96791-ghe-an-bui" data-caption="ghế ăn Bụi" data-src="https://nhaxinh.com/wp-content/uploads/2021/10/ghe_an_bui_1.jpg" data-large_image="https://nhaxinh.com/wp-content/uploads/2021/10/ghe_an_bui_1.jpg" data-large_image_width="1000" data-large_image_height="666" srcset="" data-srcset="https://nhaxinh.com/wp-content/uploads/2021/10/ghe_an_bui_1-600x400.jpg 600w, https://nhaxinh.com/wp-content/uploads/2021/10/ghe_an_bui_1-601x400.jpg 601w, https://nhaxinh.com/wp-content/uploads/2021/10/ghe_an_bui_1-768x511.jpg 768w, https://nhaxinh.com/wp-content/uploads/2021/10/ghe_an_bui_1-300x200.jpg 300w, https://nhaxinh.com/wp-content/uploads/2021/10/ghe_an_bui_1.jpg 1000w" sizes="(max-width: 600px) 100vw, 600px" /></div>                    </a>
+                                </div>
+                                                
+                                <div class="box-content-item large-4 col">
+                                    <a href="https://nhaxinh.com/san-pham/ban-an-go-pio-6-cho-1m8-mau-2/" title="Bàn ăn gỗ Pio 6 chỗ 1m8 mẫu 2">
+                                        <div data-thumb="https://nhaxinh.com/wp-content/uploads/2021/10/ban_an_go_pio_mat_melamite_van_marble_98093-100x100.jpg" class="woocommerce-product-gallery__image slide first"><img width="600" height="400" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201000%20666%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" class="lazy-load wp-post-image skip-lazy" alt="" title="ban_an_go_pio_mat_melamite_van_marble_98093.jpg" data-caption="" data-src="https://nhaxinh.com/wp-content/uploads/2021/10/ban_an_go_pio_mat_melamite_van_marble_98093.jpg" data-large_image="https://nhaxinh.com/wp-content/uploads/2021/10/ban_an_go_pio_mat_melamite_van_marble_98093.jpg" data-large_image_width="1000" data-large_image_height="666" srcset="" data-srcset="https://nhaxinh.com/wp-content/uploads/2021/10/ban_an_go_pio_mat_melamite_van_marble_98093-600x400.jpg 600w, https://nhaxinh.com/wp-content/uploads/2021/10/ban_an_go_pio_mat_melamite_van_marble_98093-300x200.jpg 300w, https://nhaxinh.com/wp-content/uploads/2021/10/ban_an_go_pio_mat_melamite_van_marble_98093-601x400.jpg 601w, https://nhaxinh.com/wp-content/uploads/2021/10/ban_an_go_pio_mat_melamite_van_marble_98093-768x511.jpg 768w, https://nhaxinh.com/wp-content/uploads/2021/10/ban_an_go_pio_mat_melamite_van_marble_98093.jpg 1000w" sizes="(max-width: 600px) 100vw, 600px" /></div>                    </a>
+                                </div>
+                                                
+                                <div class="box-content-item large-4 col">
+                                    <a href="https://nhaxinh.com/san-pham/ban-an-peak-hien-dai-mat-ceramic-van-may/" title="Bàn ăn Peak hiện đại mặt Ceramic vân mây">
+                                        <div data-thumb="https://nhaxinh.com/wp-content/uploads/2022/06/ban-an-peak-van-may-hien-dai-ceramic-100x100.jpg" class="woocommerce-product-gallery__image slide first"><img width="600" height="400" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201000%20666%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" class="lazy-load wp-post-image skip-lazy" alt="" title="ban-an-peak-van-may-hien-dai-ceramic" data-caption="" data-src="https://nhaxinh.com/wp-content/uploads/2022/06/ban-an-peak-van-may-hien-dai-ceramic.jpg" data-large_image="https://nhaxinh.com/wp-content/uploads/2022/06/ban-an-peak-van-may-hien-dai-ceramic.jpg" data-large_image_width="1000" data-large_image_height="666" srcset="" data-srcset="https://nhaxinh.com/wp-content/uploads/2022/06/ban-an-peak-van-may-hien-dai-ceramic-600x400.jpg 600w, https://nhaxinh.com/wp-content/uploads/2022/06/ban-an-peak-van-may-hien-dai-ceramic-601x400.jpg 601w, https://nhaxinh.com/wp-content/uploads/2022/06/ban-an-peak-van-may-hien-dai-ceramic-768x511.jpg 768w, https://nhaxinh.com/wp-content/uploads/2022/06/ban-an-peak-van-may-hien-dai-ceramic-300x200.jpg 300w, https://nhaxinh.com/wp-content/uploads/2022/06/ban-an-peak-van-may-hien-dai-ceramic.jpg 1000w" sizes="(max-width: 600px) 100vw, 600px" /></div>                    </a>
+                                </div>
+                                                
+                                <div class="box-content-item large-4 col">
+                                    <a href="https://nhaxinh.com/san-pham/ghe-rumba-2/" title="Ghế Rumba">
+                                        <div data-thumb="https://nhaxinh.com/wp-content/uploads/2021/11/76788-1000-ghe-an-rumba-xanh-100x100.jpg" class="woocommerce-product-gallery__image slide first"><img width="600" height="400" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201000%20666%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" class="lazy-load wp-post-image skip-lazy" alt="" title="76788-1000-ghe-an-rumba-xanh.jpg" data-caption="" data-src="https://nhaxinh.com/wp-content/uploads/2021/11/76788-1000-ghe-an-rumba-xanh.jpg" data-large_image="https://nhaxinh.com/wp-content/uploads/2021/11/76788-1000-ghe-an-rumba-xanh.jpg" data-large_image_width="1000" data-large_image_height="666" srcset="" data-srcset="https://nhaxinh.com/wp-content/uploads/2021/11/76788-1000-ghe-an-rumba-xanh-600x400.jpg 600w, https://nhaxinh.com/wp-content/uploads/2021/11/76788-1000-ghe-an-rumba-xanh-601x400.jpg 601w, https://nhaxinh.com/wp-content/uploads/2021/11/76788-1000-ghe-an-rumba-xanh-768x511.jpg 768w, https://nhaxinh.com/wp-content/uploads/2021/11/76788-1000-ghe-an-rumba-xanh-300x200.jpg 300w, https://nhaxinh.com/wp-content/uploads/2021/11/76788-1000-ghe-an-rumba-xanh.jpg 1000w" sizes="(max-width: 600px) 100vw, 600px" /></div>                    </a>
+                                </div>
+                                                
+                                <div class="box-content-item large-4 col">
+                                    <a href="https://nhaxinh.com/san-pham/ghe-led-mau-aquamarine/" title="Ghế Led Aquamarine">
+                                        <div data-thumb="https://nhaxinh.com/wp-content/uploads/2021/10/ghe_an_led_mau_xanh_duong_101517-6-100x100.jpg" class="woocommerce-product-gallery__image slide first"><img width="600" height="400" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201000%20666%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" class="lazy-load wp-post-image skip-lazy" alt="" title="ghe_an_led_mau_xanh_duong_101517-6.jpg" data-caption="" data-src="https://nhaxinh.com/wp-content/uploads/2021/10/ghe_an_led_mau_xanh_duong_101517-6.jpg" data-large_image="https://nhaxinh.com/wp-content/uploads/2021/10/ghe_an_led_mau_xanh_duong_101517-6.jpg" data-large_image_width="1000" data-large_image_height="666" srcset="" data-srcset="https://nhaxinh.com/wp-content/uploads/2021/10/ghe_an_led_mau_xanh_duong_101517-6-600x400.jpg 600w, https://nhaxinh.com/wp-content/uploads/2021/10/ghe_an_led_mau_xanh_duong_101517-6-300x200.jpg 300w, https://nhaxinh.com/wp-content/uploads/2021/10/ghe_an_led_mau_xanh_duong_101517-6-601x400.jpg 601w, https://nhaxinh.com/wp-content/uploads/2021/10/ghe_an_led_mau_xanh_duong_101517-6-768x511.jpg 768w, https://nhaxinh.com/wp-content/uploads/2021/10/ghe_an_led_mau_xanh_duong_101517-6.jpg 1000w" sizes="(max-width: 600px) 100vw, 600px" /></div>                    </a>
+                                </div>
+                                                
+                                <div class="box-content-item large-4 col">
+                                    <a href="https://nhaxinh.com/san-pham/ghe-an-kecebo/" title="Ghế ăn Kecebo">
+                                        <div data-thumb="https://nhaxinh.com/wp-content/uploads/2021/10/ghe-an-khong-tay-kecebo-vai-100x100.jpg" class="woocommerce-product-gallery__image slide first"><img width="600" height="400" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201000%20666%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" class="lazy-load wp-post-image skip-lazy" alt="" title="ghe-an-khong-tay-kecebo-vai.jpg" data-caption="" data-src="https://nhaxinh.com/wp-content/uploads/2021/10/ghe-an-khong-tay-kecebo-vai.jpg" data-large_image="https://nhaxinh.com/wp-content/uploads/2021/10/ghe-an-khong-tay-kecebo-vai.jpg" data-large_image_width="1000" data-large_image_height="666" srcset="" data-srcset="https://nhaxinh.com/wp-content/uploads/2021/10/ghe-an-khong-tay-kecebo-vai-600x400.jpg 600w, https://nhaxinh.com/wp-content/uploads/2021/10/ghe-an-khong-tay-kecebo-vai-300x200.jpg 300w, https://nhaxinh.com/wp-content/uploads/2021/10/ghe-an-khong-tay-kecebo-vai-601x400.jpg 601w, https://nhaxinh.com/wp-content/uploads/2021/10/ghe-an-khong-tay-kecebo-vai-768x511.jpg 768w, https://nhaxinh.com/wp-content/uploads/2021/10/ghe-an-khong-tay-kecebo-vai.jpg 1000w" sizes="(max-width: 600px) 100vw, 600px" /></div>                    </a>
+                                </div>
+                                                
+                                <div class="box-content-item large-4 col">
+                                    <a href="https://nhaxinh.com/san-pham/ghe-an-kissy-vai-vact6753/" title="Ghế ăn Kissy vải VACT6753">
+                                        <div data-thumb="https://nhaxinh.com/wp-content/uploads/2022/04/Ghe-an-Kissy-vai-VACT6753-4-100x100.jpg" class="woocommerce-product-gallery__image slide first"><img width="600" height="400" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201000%20666%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" class="lazy-load wp-post-image skip-lazy" alt="" title="Ghe-an-Kissy-vai-VACT6753" data-caption="" data-src="https://nhaxinh.com/wp-content/uploads/2022/04/Ghe-an-Kissy-vai-VACT6753-4.jpg" data-large_image="https://nhaxinh.com/wp-content/uploads/2022/04/Ghe-an-Kissy-vai-VACT6753-4.jpg" data-large_image_width="1000" data-large_image_height="666" srcset="" data-srcset="https://nhaxinh.com/wp-content/uploads/2022/04/Ghe-an-Kissy-vai-VACT6753-4-600x400.jpg 600w, https://nhaxinh.com/wp-content/uploads/2022/04/Ghe-an-Kissy-vai-VACT6753-4-601x400.jpg 601w, https://nhaxinh.com/wp-content/uploads/2022/04/Ghe-an-Kissy-vai-VACT6753-4-768x511.jpg 768w, https://nhaxinh.com/wp-content/uploads/2022/04/Ghe-an-Kissy-vai-VACT6753-4-300x200.jpg 300w, https://nhaxinh.com/wp-content/uploads/2022/04/Ghe-an-Kissy-vai-VACT6753-4.jpg 1000w" sizes="(max-width: 600px) 100vw, 600px" /></div>                    </a>
+                                </div>
+                                                
+                                <div class="box-content-item large-4 col">
+                                    <a href="https://nhaxinh.com/san-pham/ghe-an-miami-vai-nau-soc/" title="Ghế ăn Miami vải nâu sọc">
+                                        <div data-thumb="https://nhaxinh.com/wp-content/uploads/2022/06/GHE-AN-MIAMI-VAI-NAU-SOC-100x100.jpg" class="woocommerce-product-gallery__image slide first"><img width="600" height="400" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201000%20666%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" class="lazy-load wp-post-image skip-lazy" alt="" title="GHE-AN-MIAMI-VAI-NAU-SOC" data-caption="" data-src="https://nhaxinh.com/wp-content/uploads/2022/06/GHE-AN-MIAMI-VAI-NAU-SOC.jpg" data-large_image="https://nhaxinh.com/wp-content/uploads/2022/06/GHE-AN-MIAMI-VAI-NAU-SOC.jpg" data-large_image_width="1000" data-large_image_height="666" srcset="" data-srcset="https://nhaxinh.com/wp-content/uploads/2022/06/GHE-AN-MIAMI-VAI-NAU-SOC-600x400.jpg 600w, https://nhaxinh.com/wp-content/uploads/2022/06/GHE-AN-MIAMI-VAI-NAU-SOC-601x400.jpg 601w, https://nhaxinh.com/wp-content/uploads/2022/06/GHE-AN-MIAMI-VAI-NAU-SOC-768x511.jpg 768w, https://nhaxinh.com/wp-content/uploads/2022/06/GHE-AN-MIAMI-VAI-NAU-SOC-300x200.jpg 300w, https://nhaxinh.com/wp-content/uploads/2022/06/GHE-AN-MIAMI-VAI-NAU-SOC.jpg 1000w" sizes="(max-width: 600px) 100vw, 600px" /></div>                    </a>
+                                </div>
+                                                
+                                <div class="box-content-item large-4 col">
+                                    <a href="https://nhaxinh.com/san-pham/ghe-an-may-da-fango/" title="Ghế ăn Mây - da Fango">
+                                        <div data-thumb="https://nhaxinh.com/wp-content/uploads/2021/10/gha_an_may_khung_go_ba_bo_may_tu_nhien_96217-100x100.jpg" class="woocommerce-product-gallery__image slide first"><img width="600" height="400" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201000%20666%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" class="lazy-load wp-post-image skip-lazy" alt="" title="gha_an_may_khung_go_ba_bo_may_tu_nhien_96217.jpg" data-caption="" data-src="https://nhaxinh.com/wp-content/uploads/2021/10/gha_an_may_khung_go_ba_bo_may_tu_nhien_96217.jpg" data-large_image="https://nhaxinh.com/wp-content/uploads/2021/10/gha_an_may_khung_go_ba_bo_may_tu_nhien_96217.jpg" data-large_image_width="1000" data-large_image_height="666" srcset="" data-srcset="https://nhaxinh.com/wp-content/uploads/2021/10/gha_an_may_khung_go_ba_bo_may_tu_nhien_96217-600x400.jpg 600w, https://nhaxinh.com/wp-content/uploads/2021/10/gha_an_may_khung_go_ba_bo_may_tu_nhien_96217-300x200.jpg 300w, https://nhaxinh.com/wp-content/uploads/2021/10/gha_an_may_khung_go_ba_bo_may_tu_nhien_96217-601x400.jpg 601w, https://nhaxinh.com/wp-content/uploads/2021/10/gha_an_may_khung_go_ba_bo_may_tu_nhien_96217-768x511.jpg 768w, https://nhaxinh.com/wp-content/uploads/2021/10/gha_an_may_khung_go_ba_bo_may_tu_nhien_96217.jpg 1000w" sizes="(max-width: 600px) 100vw, 600px" /></div>                    </a>
+                                </div>
+                    </div>
+                </div>	</div>
+                </div>
+                </div>
+                </div>
+                            </div>
+                </div>
+                
+                
+                </div>
+                </div> -->
+        
+        
+        
+        </main>
+        
+    <footer class="footer grid wide">
+        <div class="slide1__footer row">
+            <div class="slide1__footer-item col l-3 m-6">
+                <div class="slide1__footer-item-cover">
+                    <img src="./public/assets/img/footer/freeship.png" alt="" class="slide1__footer-icon">
+                    <div class="slide1__footer-description">
+                        <a href="#">
+                            <h3>Miễn phí giao hàng</h3>
+                        </a>
+                        <span>Miễn phí giao hàng với đơn hàng trên 2.999.000VNĐ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide1__footer-item col l-3 m-6">
+                <div class="slide1__footer-item-cover">
+                    <img src="./public/assets/img/footer/secure.png" alt="" class="slide1__footer-icon">
+                    <div class="slide1__footer-description">
+                        <a href="#">
+                            <h3>Thanh toán an toàn</h3>
+                        </a>
+                        <span>Bảo mật thông tin </span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide1__footer-item col l-3 m-6">
+                <div class="slide1__footer-item-cover">
+                    <img src="./public/assets/img/footer/support.png" alt="" class="slide1__footer-icon">
+                    <div class="slide1__footer-description">
+                        <a href="#">
+                            <h3>Hỗ trợ online</h3>
+                        </a>
+                        <span>Hỗ trợ 24/7</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide1__footer-item col l-3 m-6">
+                <div class="slide1__footer-item-cover">
+                    <img src="./public/assets/img/footer/paymen.png" alt="" class="slide1__footer-icon">
+                    <div class="slide1__footer-description">
+                        <a href="#">
+                            <h3>Thanh toán khi giao hàng</h3>
+                        </a>
+                        <span>Tiện lợi và an toàn</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2022 <span>Chợ Online</span> <span></span> (clone by <a href="#"> Nguyen Viet Hieu</a>)</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,209 @@
+*,*::before,
+*::after{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html {
+    color: #333;
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+    min-height: 100%;
+    background: #f1f1f1;
+}    
+.main {
+    padding: 50px 0;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.heading{
+    color:#1ac7b6;
+}
+.layout_header{
+  display: flex;
+  justify-content: space-between;
+  background: #f1f1f1;
+  padding: 40px 50px; 
+}
+/* CSS signup Mạng xã hội */
+.face-gg{
+  width: 280px;
+  background: linear-gradient(134deg,#fbce50,#e08106);
+  padding: 30px 10px
+
+}
+.face-gg-connect h1{
+    font-size: 16px;
+    color:#fff; 
+    justify-content: center;
+    display: flex;
+}
+.btn {
+  display: block;
+  background: hsl(0, 0%, 4%);
+  color: hsl(0, 0, 100);
+  text-decoration: none;
+  margin: 20px 0;
+  padding: 15px 15px;
+  border-radius: 5px;
+  position: relative;
+}
+.btn::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease-in-out;
+    box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0), 0 3px 3px hsla(0, 0, 0, .2);
+    border-radius: 5px;
+  }
+  
+.btn:hover::after {
+    background: hsla(0, 0, 0, 0.1);
+    box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0.2);
+  }
+
+.btn-social {
+  padding-left: 64px;
+  position: relative;
+  z-index: 1;
+} 
+.fa-brands {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    background: hsla(0, 0, 0, 0.1);
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+
+.btn-facebook {
+  background-color: hsl(221, 44%, 41%);
+}
+.btn-google {
+  background-color: hsl(7, 71%, 55%); 
+}
+.text{
+  color:#fff;
+}
+.face-gg a{
+  color:#fff;
+}
+.face-gg-connect{
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items:center;
+}
+/* CSS form Đăng ký */
+.form {
+    width: 360px;
+    min-height: 100px;
+    padding: 32px 24px;
+    text-align: center;
+    background: #fff;
+    border-radius: 2px;
+    align-self: center;
+    box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+}
+.form .heading {
+    font-size: 2rem;
+}
+.form .desc {
+    text-align: center;
+    color: #636d77;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    line-height: 2.4rem;
+    margin-top: 16px;
+    font-weight: 300;
+}
+  
+.form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+}
+  
+.form-label,
+.form-message {
+    text-align: left;
+}
+  
+.form-label {
+    font-weight: 700;
+    padding-bottom: 6px;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+}
+.red{
+  color: #f33a58;
+}
+  
+  .form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+  }
+  
+  .form-control:hover {
+    border-color: #1dbfaf;
+  }
+  
+  .form-group.invalid .form-control {
+    border-color: #f33a58;
+  }
+  
+  .form-group.invalid .form-message {
+    color: #f33a58;
+  }
+  
+  .form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+  }
+  
+  .form-submit {
+    outline: none;
+    background-color: #1dbfaf;
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .form-submit:hover {
+    background-color: #1ac7b6;
+  }
+  
+  .spacer {
+    margin-top: 36px;
+  }
+.signup{
+  margin: 20px 0px 15px 0;
+  font-size: 14px;
+}
+.signup a{
+  text-decoration: none;
+  color: #1ac7b6;
+  margin-left: 4px  ;
+}
